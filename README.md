@@ -1,2 +1,2 @@
 # hello-world
-My First repo
+My First repo of Git sample
