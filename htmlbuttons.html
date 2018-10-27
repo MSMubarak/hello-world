@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+<button id="on" class="button" style="background-color: #e7e7e7; color: black; padding: 15px 32px;">On</button>
+<br>
+<br>
+<div>
+<p id="input">
+  <input type="radio" onclick="onOff(1)" name="radio" value="button_on">BUTTON ON
+  <input type="radio" onclick="onOff(2)" name="radio" value="button_off">BUTTON OFF
+</p>
+
+
+
+<script>
+  function onOff(a){
+    var result;
+    if(a==1){
+      result=document.getElementById("on");
+      result.style.backgroundColor = "green"
+    }
+    else{
+      result=document.getElementById("on");
+      result.style.backgroundColor = "red"
+    }
+    result=document.getElementById("on");
+  }
+  </script>
+</div>
+<br>
+<br>
+
+
+<div>
+  <button id="checkbox" class="button" style="background-color: #e7e7e7; color: black; padding: 15px 32px;">On</button>
+
+<p>
+<input type="checkbox"  name="" checked value="checkbox_on">CHECKBOX ON<br>
+<input type="checkbox" name="" value="checkbox_off">CHECKBOX OFF<br>
+</p>
+
+</div>
+  </body>
+</html>
