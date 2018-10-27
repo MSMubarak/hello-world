@@ -1,0 +1,58 @@
+<!DOCTYPE Html>
+<html>
+
+<body onload="createListView()">
+
+  Name:<input id="name" type="text" value="" name="">
+  <span id="name-required" style="display:none">Please Enter your name</span>
+  <span id="name-length" style="display:none">Maximum allowed characters should be below 36</span>
+  <span id="name-type" style="display:none">characters only!</span>
+  <br><br>
+
+
+  Age:<input id="age" type="number" value="" age="">
+  <span id="age-required" style="display:none">please enter your age</span>
+  <span id="age-limit" style="display:none">Age should be above 18 and below 150</span>
+  <span id="age-type" style="display:none">number only</span>
+  <br><br>
+
+
+  E-mail: <input id="email" type="email" value="" email="" required>
+  <span id="email-required" style="display:none">please enter your email</span>
+  <span id="email-validity" style="display:none">please enter a valid email id</span>
+  <br><br>
+
+
+  City:<select id="city" value="" city="">
+    <option value="" hidden>Choose the city</option>
+    <option value="Tirunelveli">tirunelveli</option>
+    <option value="madurai">madurai</option>
+    <option value="coimbatore">coimbatore</option>
+    <option value="chennai">chennai</option>
+  </select><br><br>
+  <span id="city-select" style="display:none">please select the city</span>
+
+
+  <button id="submit" type="submit" style="display:block" onclick="validateForm()">Submit</button>
+
+  <button id="localStorage" type="button" name="button" style="display:none" onclick="clearLocal()">Clear localStorage</button>
+
+  <button id="clear" type="button" onclick="clearForm()" style="display:none" value=""> Clear </button>
+
+  <button id="update" type="button" onclick="updateUser()" style="display:none"  value="">Update</button>
+
+  <br>
+  <br>
+  <br>
+
+
+<ul id="iterate_personal_details">
+
+</ul>
+
+
+<script src="./validateForm.js"></script>
+
+
+</body>
+</html>
